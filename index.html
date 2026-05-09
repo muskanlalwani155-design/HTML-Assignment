@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        
         table, th, td{
             border: 2px solid black;
             padding: 5px;
@@ -20,13 +21,29 @@
             display: block;
             margin-bottom: 10px;
         }
+       .abc{
+           border: 5px solid; /* Sirf width aur style batayein */
+           border-image: linear-gradient(to right, red, orange, yellow, green) 1;
+        }
         
+
+        .video-bg{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 970px;
+            object-fit: cover;
+            z-index: -1;
+        }
         
     </style>
     
 </head>
 <body>
-    <nav id="nav">
+    <div>
+        <div class="abc">
+     <nav id="nav">
         <a href="#abt">About |</a>
         <a href="#fea">Features |</a>
         <a href="#spec">Specifications |</a>
@@ -34,15 +51,36 @@
         <a href="#rev">Reviews |</a>
         <a href="#faq">FAQ |</a>
         <a href="#con">Contact |</a>
-    </nav>
+     </nav>
 
-    <section>
+     <section>
         <h1>Eco Bottle</h1>
         <h3>Stay Hyderated Save The Planet</h3>
         <a href="#">Order Now</a> <br>
         <marquee width="200px" >Eco Bottle for just 515—Limited Time Offer! 🥳</marquee>
-    </section>
+     </section>
     
+    <!-- Gallery  -->
+     <section id="gal">
+        <h2>Gallery</h2>
+         <img src="https://hips.hearstapps.com/hmg-prod/images/701/indestructable-hydro-flask-water-bottles-black-friday-1511616967.jpg?crop=1xw:0.786xh;center,top&resize=1200:*" alt="product image loading...">
+         <img src="https://i.pinimg.com/736x/d9/8b/ea/d98beaeeb12e2a789dd80e0aaec4d5aa.jpg" alt="product image loading...">
+         <img src="https://content.backcountry.com/images/items/large/HYF/HYFZ01H/GOJ_D1.jpg" alt="product image loading...">
+         <img src="https://www.brainiacsbest.com/content/images/size/w600/2023/07/Hydro-Flask-Wide-Mouth-Straw-Lid-32-oz.--2-.jpg" alt="product image loading...">
+         <img src="https://pinaywise.com/wp-content/uploads/2024/02/Hydro-Flask-Wide-Mouth-with-Straw-2048x2048.jpg" alt="product image loading...">
+     </section>
+     </div>
+
+    <!-- Customer Reveiws -->
+    <section id="rev" style="color: yellow;">
+        <h2>Customer Reviews</h2>
+        <p style="margin-left: 50px;">"Best Water Bottle I've ever owned!"</p>  
+        <p>– Sarah</p>            
+        <p style="margin-left: 50px;">"Keep my drinks cold for hours"</p> 
+        <p>– James</p>
+    </section>
+    </div>
+
     <!-- About Ecobottle -->
     <section id="abt">
         <h2>About Eco Bottle</h2>
@@ -50,7 +88,7 @@
             Perfect for travel, work and fitness. 
         </p>
     </section>
-    
+
     <!-- Key feature  -->
     <section id="fea">
         <h2>Key Features</h2>
@@ -61,7 +99,7 @@
             <li>Available in multiple colors</li>
         </ul>
     </section>
-    
+
     <!-- Specification  -->
     <section id="spec">
         <h2>Specifications</h2>
@@ -89,29 +127,16 @@
         </table>
     </section>
     
-    <!-- Gallery  -->
-    <section id="gal">
-        <h2>Gallery</h2>
-         <img src="https://hips.hearstapps.com/hmg-prod/images/701/indestructable-hydro-flask-water-bottles-black-friday-1511616967.jpg?crop=1xw:0.786xh;center,top&resize=1200:*" alt="product image loading...">
-         <img src="https://i.pinimg.com/736x/d9/8b/ea/d98beaeeb12e2a789dd80e0aaec4d5aa.jpg" alt="product image loading...">
-         <img src="https://content.backcountry.com/images/items/large/HYF/HYFZ01H/GOJ_D1.jpg" alt="product image loading...">
-         <img src="https://www.brainiacsbest.com/content/images/size/w600/2023/07/Hydro-Flask-Wide-Mouth-Straw-Lid-32-oz.--2-.jpg" alt="product image loading...">
-         <img src="https://pinaywise.com/wp-content/uploads/2024/02/Hydro-Flask-Wide-Mouth-with-Straw-2048x2048.jpg" alt="product image loading...">
-
+    
+    <section>
          <h2>Watch Our Product In Action</h2>
          <P>🎦 Discover how <b>EcoBottle</b> keeps your drinks fresh and helps save the planet</P>
-         <video src="https://cdn.pixabay.com/video/2024/02/06/199596-910653729_large.mp4"  width="70%"  autoplay muted controls></video>
+         <video class="video-bg" src="https://cdn.pixabay.com/video/2024/02/06/199596-910653729_large.mp4"  width="70%"  autoplay muted controls></video>
          <p><b>Tagline:</b> "EcoBottle – Hydration meets Sustainbility" </p>
     </section>
     
-    <!-- Customer Reveiws -->
-    <section id="rev">
-        <h2>Customer Reviews</h2>
-        <p style="margin-left: 50px;">"Best Water Bottle I've ever owned!"</p>  
-        <p>– Sarah</p>            
-        <p style="margin-left: 50px;">"Keep my drinks cold for hours"</p> 
-        <p>– James</p>
-    </section>
+    
+    
     
     <!-- frequently asked questions -->
     <section id="faq">
@@ -131,5 +156,6 @@
         <p>Contact: support@ecobottle.com</p>
         <p>© 2026 EcoBottle Inc. | All Rights Reserved </p>
     </section>
+    
 </body>
 </html>
